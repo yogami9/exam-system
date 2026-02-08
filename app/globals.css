@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-primary to-secondary min-h-screen;
+  }
+}
+
+@layer components {
+  .exam-container {
+    @apply max-w-4xl mx-auto bg-white rounded-lg shadow-2xl overflow-hidden;
+  }
+  
+  .exam-header {
+    @apply bg-gray-800 text-white p-8 text-center;
+  }
+  
+  .question-card {
+    @apply bg-gray-50 p-6 rounded-lg border-l-4 border-primary mb-6;
+  }
+  
+  .option-label {
+    @apply flex items-center p-3 bg-white rounded-lg cursor-pointer hover:bg-gray-100 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all;
+  }
+  
+  .btn-danger {
+    @apply bg-danger hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all;
+  }
+  
+  .btn-success {
+    @apply bg-success hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all;
+  }
+}
+
+/* Disable text selection during exam */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Prevent context menu */
+.no-context-menu {
+  -webkit-touch-callout: none;
+}
+
+/* Print protection */
+@media print {
+  body {
+    display: none !important;
+  }
+}

@@ -1,0 +1,5 @@
+# Python dependencies for MongoDB database setup
+# Install with: pip install -r requirements.txt
+
+pymongo>=4.6.0
+python-dotenv>=1.0.0

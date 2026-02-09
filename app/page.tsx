@@ -66,7 +66,7 @@ export default function Home() {
               <li className="font-bold">Do NOT switch tabs, minimize browser, or leave fullscreen mode</li>
               <li className="font-bold">Do NOT copy, paste, or right-click</li>
               <li className="text-red-600 font-bold">
-                After 2 violations, you will be PERMANENTLY BANNED from continuing the exam
+                After 5 violations, you will be PERMANENTLY BANNED from continuing the exam
               </li>
               <li>All suspicious activities will be logged and reported</li>
               <li>You must complete the exam in one sitting</li>

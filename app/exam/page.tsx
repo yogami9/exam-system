@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { FaClock, FaExclamationTriangle } from 'react-icons/fa';
 
-const MAX_VIOLATIONS = 2;
+const MAX_VIOLATIONS = 5;
 const EXAM_DURATION = 2 * 60 * 60; // 2 hours in seconds
 
 interface Question {
